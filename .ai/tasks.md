@@ -12,26 +12,26 @@
 > **Dependency**: None  
 > **Estimated Effort**: ~1 hour
 
-- [ ] Initialize npm project: `npm init -y`
-- [ ] Install Vite: `npm install -D vite`
-- [ ] Create `vite.config.js` with base config
-- [ ] Create `package.json` scripts (`dev`, `build`, `preview`)
-- [ ] Create `index.html` entry point with:
+- [x] Initialize npm project: `npm init -y`
+- [x] Install Vite: `npm install -D vite`
+- [x] Create `vite.config.js` with base config
+- [x] Create `package.json` scripts (`dev`, `build`, `preview`)
+- [x] Create `index.html` entry point with:
   - Meta tags (charset, viewport, description, Open Graph)
   - Google Fonts preconnect & link (Inter, Outfit)
   - `<div id="app"></div>` root container
   - Script tag to `src/main.js` (type="module")
-- [ ] Create `src/config.js` with:
+- [x] Create `src/config.js` with:
   - TMDB API key (from env: `import.meta.env.VITE_TMDB_API_KEY`)
   - TMDB base URL
   - TMDB image base URL
   - Viduki base URL
   - Default accent color hex
   - API tier labels mapping
-- [ ] Create `.env` file with `VITE_TMDB_API_KEY=your_key_here`
-- [ ] Create `.env.example` as template (without actual key)
-- [ ] Create `.gitignore` (node_modules, dist, .env)
-- [ ] Verify dev server starts: `npm run dev`
+- [x] Create `.env` file with `VITE_TMDB_API_KEY=your_key_here`
+- [x] Create `.env.example` as template (without actual key)
+- [x] Create `.gitignore` (node_modules, dist, .env)
+- [x] Verify dev server starts: `npm run dev`
 
 ---
 
@@ -615,7 +615,7 @@
 
 | Phase | Name                        | Tasks | Est. Hours | Status      |
 |------ |---------------------------- |------ |----------- |------------ |
-| 0     | Project Setup               | 10    | ~1h        | ⬜ Not Started |
+| 0     | Project Setup               | 10    | ~1h        | ✅ Complete |
 | 1     | Design System & Styles      | 40+   | ~4h        | ⬜ Not Started |
 | 2     | Utilities & API Layer       | 30+   | ~5h        | ⬜ Not Started |
 | 3     | Core Components             | 30+   | ~10h       | ⬜ Not Started |
