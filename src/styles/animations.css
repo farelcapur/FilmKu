@@ -1,0 +1,209 @@
+/* ==========================================================================
+   FilmKu — Animations & Transitions
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Keyframes
+   -------------------------------------------------------------------------- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideInUp {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.05); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes progressBar {
+  from { width: 100%; }
+  to   { width: 0%; }
+}
+
+@keyframes heroSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* --------------------------------------------------------------------------
+   Animation Utility Classes
+   -------------------------------------------------------------------------- */
+.animate-fade-in {
+  animation: fadeIn 400ms ease forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 500ms ease forwards;
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 500ms ease forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 300ms ease forwards;
+}
+
+/* --------------------------------------------------------------------------
+   Scroll-Triggered Animations (via IntersectionObserver)
+   -------------------------------------------------------------------------- */
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+.animate-on-scroll.animate-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-on-scroll--up {
+  transform: translateY(30px);
+}
+
+.animate-on-scroll--left {
+  transform: translateX(-30px);
+}
+
+.animate-on-scroll--right {
+  transform: translateX(30px);
+}
+
+/* --------------------------------------------------------------------------
+   Card Stagger Animation (for grid items)
+   -------------------------------------------------------------------------- */
+.stagger-item {
+  opacity: 0;
+  animation: fadeInUp 400ms ease forwards;
+}
+
+.stagger-item:nth-child(1)  { animation-delay: 0ms; }
+.stagger-item:nth-child(2)  { animation-delay: 50ms; }
+.stagger-item:nth-child(3)  { animation-delay: 100ms; }
+.stagger-item:nth-child(4)  { animation-delay: 150ms; }
+.stagger-item:nth-child(5)  { animation-delay: 200ms; }
+.stagger-item:nth-child(6)  { animation-delay: 250ms; }
+.stagger-item:nth-child(7)  { animation-delay: 300ms; }
+.stagger-item:nth-child(8)  { animation-delay: 350ms; }
+.stagger-item:nth-child(9)  { animation-delay: 400ms; }
+.stagger-item:nth-child(10) { animation-delay: 450ms; }
+.stagger-item:nth-child(11) { animation-delay: 500ms; }
+.stagger-item:nth-child(12) { animation-delay: 550ms; }
+.stagger-item:nth-child(13) { animation-delay: 600ms; }
+.stagger-item:nth-child(14) { animation-delay: 650ms; }
+.stagger-item:nth-child(15) { animation-delay: 700ms; }
+.stagger-item:nth-child(16) { animation-delay: 750ms; }
+.stagger-item:nth-child(17) { animation-delay: 800ms; }
+.stagger-item:nth-child(18) { animation-delay: 850ms; }
+.stagger-item:nth-child(19) { animation-delay: 900ms; }
+.stagger-item:nth-child(20) { animation-delay: 950ms; }
+
+/* --------------------------------------------------------------------------
+   Page Transition
+   -------------------------------------------------------------------------- */
+.page-enter {
+  animation: fadeIn 300ms ease forwards;
+}
+
+.page-exit {
+  animation: fadeIn 300ms ease reverse forwards;
+}
+
+/* --------------------------------------------------------------------------
+   Reduced Motion
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

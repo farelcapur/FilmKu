@@ -41,8 +41,8 @@
 > **Estimated Effort**: ~4 hours
 
 ### 1.1 Global Styles (`src/styles/index.css`)
-- [ ] CSS Reset (box-sizing, margin, padding, font inheritance)
-- [ ] CSS Custom Properties (design tokens):
+- [x] CSS Reset (box-sizing, margin, padding, font inheritance)
+- [x] CSS Custom Properties (design tokens):
   - Colors (bg, surface, text, accent, semantic)
   - Typography (font families, sizes, weights, line-heights)
   - Spacing scale (4px base unit: `--space-1` through `--space-16`)
@@ -50,68 +50,68 @@
   - Shadows (elevation levels: `--shadow-sm`, `--shadow-md`, `--shadow-lg`, `--shadow-xl`)
   - Transitions (`--transition-fast`, `--transition-default`, `--transition-slow`)
   - Z-index scale (`--z-base`, `--z-dropdown`, `--z-modal`, `--z-toast`, `--z-navbar`)
-- [ ] Base body styles (background, color, font, antialiasing)
-- [ ] Scrollbar styling (thin, dark, custom colors)
-- [ ] Selection styling (accent color)
-- [ ] Link reset styles
-- [ ] Utility classes (`.sr-only`, `.truncate`, `.line-clamp-2`, `.line-clamp-3`)
-- [ ] Import Google Fonts via `@import` or link in HTML
+- [x] Base body styles (background, color, font, antialiasing)
+- [x] Scrollbar styling (thin, dark, custom colors)
+- [x] Selection styling (accent color)
+- [x] Link reset styles
+- [x] Utility classes (`.sr-only`, `.truncate`, `.line-clamp-2`, `.line-clamp-3`)
+- [x] Import Google Fonts via `@import` or link in HTML
 
 ### 1.2 Component Styles (`src/styles/components.css`)
-- [ ] `.navbar` styles (fixed, transparent → solid, glassmorphism, height 64px)
-- [ ] `.hero` styles (full-width, gradient overlay, content positioning)
-- [ ] `.movie-card` styles (poster ratio 2:3, border-radius, hover scale + shadow, overflow hidden)
-- [ ] `.movie-card__overlay` styles (gradient overlay on hover, info appearance)
-- [ ] `.movie-row` styles (horizontal scroll, scroll-snap, gap, padding, hide scrollbar)
-- [ ] `.movie-row__title` styles (section heading with accent underline)
-- [ ] `.btn` styles (primary, secondary, ghost, icon variants, hover/active states)
-- [ ] `.badge` styles (genre tags, rating badges with color coding)
-- [ ] `.search-bar` styles (expanding input, focus ring, icon positioning)
-- [ ] `.modal` styles (overlay, centered content, glassmorphism, slide-in animation)
-- [ ] `.toast` styles (fixed bottom-right, slide-in, progress bar auto-dismiss)
-- [ ] `.progress-bar` styles (thin bar, accent color, percentage width)
-- [ ] `.dropdown` styles (glass background, border, shadow, item hover)
-- [ ] `.video-player` styles (16:9 container, loading state, controls overlay)
-- [ ] `.season-selector` styles (tabs/dropdown, episode list items, active state)
-- [ ] `.cast-card` styles (circular image, name, character, hover)
-- [ ] `.skeleton` styles (shimmer gradient animation, various shapes)
-- [ ] `.glass` utility class (backdrop-filter, background, border)
+- [x] `.navbar` styles (fixed, transparent → solid, glassmorphism, height 64px)
+- [x] `.hero` styles (full-width, gradient overlay, content positioning)
+- [x] `.movie-card` styles (poster ratio 2:3, border-radius, hover scale + shadow, overflow hidden)
+- [x] `.movie-card__overlay` styles (gradient overlay on hover, info appearance)
+- [x] `.movie-row` styles (horizontal scroll, scroll-snap, gap, padding, hide scrollbar)
+- [x] `.movie-row__title` styles (section heading with accent underline)
+- [x] `.btn` styles (primary, secondary, ghost, icon variants, hover/active states)
+- [x] `.badge` styles (genre tags, rating badges with color coding)
+- [x] `.search-bar` styles (expanding input, focus ring, icon positioning)
+- [x] `.modal` styles (overlay, centered content, glassmorphism, slide-in animation)
+- [x] `.toast` styles (fixed bottom-right, slide-in, progress bar auto-dismiss)
+- [x] `.progress-bar` styles (thin bar, accent color, percentage width)
+- [x] `.dropdown` styles (glass background, border, shadow, item hover)
+- [x] `.video-player` styles (16:9 container, loading state, controls overlay)
+- [x] `.season-selector` styles (tabs/dropdown, episode list items, active state)
+- [x] `.cast-card` styles (circular image, name, character, hover)
+- [x] `.skeleton` styles (shimmer gradient animation, various shapes)
+- [x] `.glass` utility class (backdrop-filter, background, border)
 
 ### 1.3 Page Styles (`src/styles/pages.css`)
-- [ ] Home page layout (hero + rows stacking)
-- [ ] Browse page layout (filters bar + grid)
-- [ ] Search results layout (query header + grid)
-- [ ] Detail page layout (backdrop + content + rows)
-- [ ] Watch page layout (full-width player + metadata below)
-- [ ] Bookmarks page layout (header + grid)
-- [ ] 404 page layout (centered message)
+- [x] Home page layout (hero + rows stacking)
+- [x] Browse page layout (filters bar + grid)
+- [x] Search results layout (query header + grid)
+- [x] Detail page layout (backdrop + content + rows)
+- [x] Watch page layout (full-width player + metadata below)
+- [x] Bookmarks page layout (header + grid)
+- [x] 404 page layout (centered message)
 
 ### 1.4 Animations (`src/styles/animations.css`)
-- [ ] `@keyframes fadeIn` — opacity 0 → 1
-- [ ] `@keyframes fadeInUp` — opacity 0 + translateY(20px) → visible
-- [ ] `@keyframes fadeInDown` — opacity 0 + translateY(-20px) → visible
-- [ ] `@keyframes slideInLeft` — translateX(-100%) → 0
-- [ ] `@keyframes slideInRight` — translateX(100%) → 0
-- [ ] `@keyframes slideInUp` — translateY(100%) → 0
-- [ ] `@keyframes scaleIn` — scale(0.9) opacity(0) → normal
-- [ ] `@keyframes shimmer` — skeleton loading shimmer gradient
-- [ ] `@keyframes pulse` — subtle scale pulse for loading states
-- [ ] `@keyframes spin` — 360deg rotation for spinner
-- [ ] `@keyframes progressBar` — toast auto-dismiss progress
-- [ ] `@keyframes heroSlideIn` — hero content entrance animation
-- [ ] Intersection Observer based `.animate-on-scroll` trigger class
-- [ ] Card stagger animation for grid items
+- [x] `@keyframes fadeIn` — opacity 0 → 1
+- [x] `@keyframes fadeInUp` — opacity 0 + translateY(20px) → visible
+- [x] `@keyframes fadeInDown` — opacity 0 + translateY(-20px) → visible
+- [x] `@keyframes slideInLeft` — translateX(-100%) → 0
+- [x] `@keyframes slideInRight` — translateX(100%) → 0
+- [x] `@keyframes slideInUp` — translateY(100%) → 0
+- [x] `@keyframes scaleIn` — scale(0.9) opacity(0) → normal
+- [x] `@keyframes shimmer` — skeleton loading shimmer gradient
+- [x] `@keyframes pulse` — subtle scale pulse for loading states
+- [x] `@keyframes spin` — 360deg rotation for spinner
+- [x] `@keyframes progressBar` — toast auto-dismiss progress
+- [x] `@keyframes heroSlideIn` — hero content entrance animation
+- [x] Intersection Observer based `.animate-on-scroll` trigger class
+- [x] Card stagger animation for grid items
 
 ### 1.5 Responsive Styles (`src/styles/responsive.css`)
-- [ ] Breakpoint: 480px — adjust card sizes, font sizes
-- [ ] Breakpoint: 640px — 3-column grid, larger hero text
-- [ ] Breakpoint: 768px — tablet layout, side-by-side where appropriate
-- [ ] Breakpoint: 1024px — desktop layout, expanded card row
-- [ ] Breakpoint: 1280px — large desktop, wider content area
-- [ ] Breakpoint: 1536px — 4K support, max-width container
-- [ ] Mobile navbar → hamburger menu
-- [ ] Touch-friendly tap targets (min 44px)
-- [ ] Hide/show elements per breakpoint
+- [x] Breakpoint: 480px — adjust card sizes, font sizes
+- [x] Breakpoint: 640px — 3-column grid, larger hero text
+- [x] Breakpoint: 768px — tablet layout, side-by-side where appropriate
+- [x] Breakpoint: 1024px — desktop layout, expanded card row
+- [x] Breakpoint: 1280px — large desktop, wider content area
+- [x] Breakpoint: 1536px — 4K support, max-width container
+- [x] Mobile navbar → hamburger menu
+- [x] Touch-friendly tap targets (min 44px)
+- [x] Hide/show elements per breakpoint
 
 ---
 
@@ -616,7 +616,7 @@
 | Phase | Name                        | Tasks | Est. Hours | Status      |
 |------ |---------------------------- |------ |----------- |------------ |
 | 0     | Project Setup               | 10    | ~1h        | ✅ Complete |
-| 1     | Design System & Styles      | 40+   | ~4h        | ⬜ Not Started |
+| 1     | Design System & Styles      | 40+   | ~4h        | ✅ Complete |
 | 2     | Utilities & API Layer       | 30+   | ~5h        | ⬜ Not Started |
 | 3     | Core Components             | 30+   | ~10h       | ⬜ Not Started |
 | 4     | Pages                       | 30+   | ~10h       | ⬜ Not Started |
