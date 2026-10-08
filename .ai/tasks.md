@@ -121,13 +121,13 @@
 > **Estimated Effort**: ~5 hours
 
 ### 2.1 Utility Modules
-- [ ] `src/utils/dom.js`:
+- [x] `src/utils/dom.js`:
   - `$(selector)` — querySelector shorthand
   - `$$(selector)` — querySelectorAll shorthand
   - `createElement(tag, attrs, children)` — create element helper
   - `clearElement(el)` — remove all children
   - `insertHTML(el, position, html)` — safe insertAdjacentHTML
-- [ ] `src/utils/storage.js`:
+- [x] `src/utils/storage.js`:
   - `getWatchHistory()` — read watch progress from localStorage
   - `setWatchHistory(data)` — write watch progress
   - `getBookmarks()` — read bookmarks array
@@ -139,10 +139,10 @@
   - `getSearchHistory()` — read recent searches
   - `addSearchQuery(query)` — add to search history (max 10)
   - `clearSearchHistory()` — clear all search history
-- [ ] `src/utils/debounce.js`:
+- [x] `src/utils/debounce.js`:
   - `debounce(fn, delay)` — debounce function (default 300ms)
   - `throttle(fn, limit)` — throttle function
-- [ ] `src/utils/formatters.js`:
+- [x] `src/utils/formatters.js`:
   - `formatRating(vote)` — "7.5" format with color class
   - `formatRuntime(minutes)` — "2h 15m" format
   - `formatDate(dateStr)` — "Jan 15, 2026" format
@@ -151,51 +151,51 @@
   - `truncateText(text, maxLength)` — truncate with "..."
   - `getImageUrl(path, size)` — build TMDB image URL
   - `getRatingColor(rating)` — return CSS class based on rating
-- [ ] `src/utils/constants.js`:
+- [x] `src/utils/constants.js`:
   - Genre mapping (id → name, for both movie and TV)
   - Default page size
   - Max search history items
   - Debounce delays
 
 ### 2.2 TMDB API Wrapper (`src/api/tmdb.js`)
-- [ ] `fetchFromTMDB(endpoint, params)` — base fetch function with error handling, cache
-- [ ] `getTrending(mediaType, timeWindow)` — trending content
-- [ ] `getPopularMovies(page)` — popular movies
-- [ ] `getTopRatedMovies(page)` — top rated movies
-- [ ] `getUpcomingMovies(page)` — upcoming movies
-- [ ] `getMovieDetails(movieId)` — full movie details with append (credits, videos, similar, recommendations)
-- [ ] `getPopularTV(page)` — popular TV shows
-- [ ] `getTopRatedTV(page)` — top rated TV shows
-- [ ] `getTVDetails(tvId)` — full TV details with append
-- [ ] `getTVSeason(tvId, seasonNum)` — season with all episodes
-- [ ] `searchMulti(query, page)` — multi-search
-- [ ] `getGenres(mediaType)` — genre list
-- [ ] `discoverMovies(params)` — discover with filters
-- [ ] `discoverTV(params)` — discover with filters
-- [ ] Response caching with `sessionStorage` (TTL: 5 minutes)
-- [ ] Error handling with retry logic (max 2 retries)
+- [x] `fetchFromTMDB(endpoint, params)` — base fetch function with error handling, cache
+- [x] `getTrending(mediaType, timeWindow)` — trending content
+- [x] `getPopularMovies(page)` — popular movies
+- [x] `getTopRatedMovies(page)` — top rated movies
+- [x] `getUpcomingMovies(page)` — upcoming movies
+- [x] `getMovieDetails(movieId)` — full movie details with append (credits, videos, similar, recommendations)
+- [x] `getPopularTV(page)` — popular TV shows
+- [x] `getTopRatedTV(page)` — top rated TV shows
+- [x] `getTVDetails(tvId)` — full TV details with append
+- [x] `getTVSeason(tvId, seasonNum)` — season with all episodes
+- [x] `searchMulti(query, page)` — multi-search
+- [x] `getGenres(mediaType)` — genre list
+- [x] `discoverMovies(params)` — discover with filters
+- [x] `discoverTV(params)` — discover with filters
+- [x] Response caching with `sessionStorage` (TTL: 5 minutes)
+- [x] Error handling with retry logic (max 2 retries)
 
 ### 2.3 Viduki Embed Builder (`src/api/viduki.js`)
-- [ ] `buildMovieUrl(tmdbId, apiTier, color)` — build movie embed URL
-- [ ] `buildTVUrl(tmdbId, season, episode, apiTier, color)` — build TV embed URL
-- [ ] `getApiLabel(tier)` — return human-readable label
-- [ ] `getNextApiTier(currentTier)` — return next fallback tier (or null)
-- [ ] `initFallbackListener(onFallback)` — setup message event listener for failures
-- [ ] `initProgressListener(onProgress)` — setup message event listener for watch progress
-- [ ] `removeFallbackListener()` — cleanup listener
-- [ ] `removeProgressListener()` — cleanup listener
+- [x] `buildMovieUrl(tmdbId, apiTier, color)` — build movie embed URL
+- [x] `buildTVUrl(tmdbId, season, episode, apiTier, color)` — build TV embed URL
+- [x] `getApiLabel(tier)` — return human-readable label
+- [x] `getNextApiTier(currentTier)` — return next fallback tier (or null)
+- [x] `initFallbackListener(onFallback)` — setup message event listener for failures
+- [x] `initProgressListener(onProgress)` — setup message event listener for watch progress
+- [x] `removeFallbackListener()` — cleanup listener
+- [x] `removeProgressListener()` — cleanup listener
 
 ### 2.4 Router (`src/router.js`)
-- [ ] Hash-based SPA router implementation
-- [ ] Route registration: `router.on(pattern, handler)`
-- [ ] Pattern matching with params: `#/movie/:id` → `{ id: "123" }`
-- [ ] `router.navigate(path)` — programmatic navigation
-- [ ] `router.getCurrentRoute()` — return current route info
-- [ ] Route change event listener (`hashchange`)
-- [ ] Before/after route hooks (for cleanup, scroll reset)
-- [ ] 404 fallback route
-- [ ] Scroll to top on route change
-- [ ] Page transition animation trigger
+- [x] Hash-based SPA router implementation
+- [x] Route registration: `router.on(pattern, handler)`
+- [x] Pattern matching with params: `#/movie/:id` → `{ id: "123" }`
+- [x] `router.navigate(path)` — programmatic navigation
+- [x] `router.getCurrentRoute()` — return current route info
+- [x] Route change event listener (`hashchange`)
+- [x] Before/after route hooks (for cleanup, scroll reset)
+- [x] 404 fallback route
+- [x] Scroll to top on route change
+- [x] Page transition animation trigger
 
 ---
 
@@ -617,7 +617,7 @@
 |------ |---------------------------- |------ |----------- |------------ |
 | 0     | Project Setup               | 10    | ~1h        | ✅ Complete |
 | 1     | Design System & Styles      | 40+   | ~4h        | ✅ Complete |
-| 2     | Utilities & API Layer       | 30+   | ~5h        | ⬜ Not Started |
+| 2     | Utilities & API Layer       | 30+   | ~5h        | ✅ Complete |
 | 3     | Core Components             | 30+   | ~10h       | ⬜ Not Started |
 | 4     | Pages                       | 30+   | ~10h       | ⬜ Not Started |
 | 5     | App Assembly & Integration  | 15+   | ~5h        | ⬜ Not Started |
